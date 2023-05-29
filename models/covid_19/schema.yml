@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+  - name: clean_covid_19
+    description: data cleaning covid 19
+    columns:
+      - name: state
+        description: state of country
+      - name: country
+        description: country
+      - name: latitude
+        description: latitude
+      - name: longitude
+        description: longitude
+      - name: date
+        description: date
+      - name: deaths
+        description: deaths
+      - name: recovered
+        description: recovered
+      - name: active
+        description: active
+      - name: who_region
+        description: who_region

@@ -1,0 +1,12 @@
+covid_19:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: covid
+      password: covid
+      port: 5432
+      dbname: covid_19
+      schema: analysis
+      threads: 4
