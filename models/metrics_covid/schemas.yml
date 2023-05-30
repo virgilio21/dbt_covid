@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: countries
+    description: metrics covid world
+    columns:
+      - name: state
+        description: state of country
+        #tests: 
+         # - not_null
+      - name: country
+        description: country
+      - name: total_deaths
+        description: latitude
+      - name: total_recovered
+        description: longitude
+      - name: total_actives

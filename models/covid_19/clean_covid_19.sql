@@ -1,12 +1,12 @@
 {{ config(materialized='table') }}
 
-select "Province/State" as state,
-       "Country/Region" as country,
-       "Lat" as latitude,
-       "Long" as longitude,
-       "Date" as date,
-       "Deaths" as deaths,
-       "Recovered" as recovered,
-       "Active" as active,
-       "WHO Region" as who_region
-from {{ ref('covid_19') }}
+SELECT "Province/State" AS state,
+       "Country/Region" AS country,
+       "Lat" AS latitude,
+       "Long" AS longitude,
+       "Date" AS date,
+       "Deaths" AS deaths,
+       "Recovered" AS recovered,
+       "Active" AS active,
+       "WHO Region" AS who_region
+  FROM {{ ref('covid_19') }}
